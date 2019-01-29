@@ -1,0 +1,30 @@
+#include "pch.h"
+#include "Templated.h"
+
+template <class R>
+Templated<R>::Templated()
+{
+}
+
+template<class R>
+Templated<R>::Templated(R init)
+{
+	_counter = init;
+}
+
+template <class R>
+Templated<R>::~Templated()
+{
+}
+
+template<class R>
+void Templated<R>::incrementCounter(R num)
+{
+	_counter += num;
+}
+
+template<class R>
+R Templated<R>::getCounter()
+{
+	return _counter;
+}
